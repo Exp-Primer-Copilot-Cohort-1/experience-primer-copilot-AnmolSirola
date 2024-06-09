@@ -1,12 +1,10 @@
-function skillMember(){
+function skillsMember(){
     return{
-        name: 'skill',
-        member: 'skillMember',
-        skill: 'judo',
-        level: 1,
-        show: function(){
-            console.log(this.name + ' ' + this.skill + ' ' + this.level);
+        name: 'John Doe',
+        age: 30,
+        skills: ['HTML', 'CSS', 'JS'],
+        details: function(){
+            return `Name: ${this.name}, Age: ${this.age}, Skills: ${this.skills.join(', ')}`
         }
-    }
-
+    };
 }
